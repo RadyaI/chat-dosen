@@ -59,7 +59,7 @@ export default function DetailClient({ id }: { id: string }) {
             <div className="absolute inset-0 bg-black translate-x-1 translate-y-1 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
             <div className="relative bg-white border-2 border-black px-4 py-2 font-bold uppercase flex items-center gap-2 hover:-translate-y-1 transition-transform">
               <ArrowLeft size={20} strokeWidth={3} />
-              Back
+              <span className="hidden md:block">Back</span>
             </div>
           </Link>
         </nav>
