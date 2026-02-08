@@ -86,7 +86,7 @@ export default function ResultBox({ initialFormatted, initialParagraph }: Result
           className={`px-6 py-3 border-2 border-black rounded-t-lg font-bold text-sm transition-all relative ${activeTab === "paragraph" ? tabActive : tabInactive
             }`}
         >
-          Satu Paragraf
+          Paragraf
         </button>
 
 

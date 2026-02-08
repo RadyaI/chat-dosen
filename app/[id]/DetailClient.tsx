@@ -38,7 +38,6 @@ export default function DetailClient({ id }: { id: string }) {
   return (
     <main className="min-h-screen relative overflow-x-hidden text-black font-sans selection:bg-[#FF00FF] selection:text-white">
 
-      {}
       <div className="fixed inset-0 bg-[#FFFDF5] z-0 pointer-events-none">
         <div className="absolute inset-0 opacity-20" style={{
           backgroundImage: 'radial-gradient(#000 2px, transparent 2px)',
@@ -46,11 +45,10 @@ export default function DetailClient({ id }: { id: string }) {
         }}></div>
       </div>
 
-      {}
-      <div className="fixed top-20 right-[-50px] w-40 h-40 bg-[#FF6B6B] border-4 border-black rounded-full z-0 animate-bounce delay-700 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" />
+      <div className="hidden md:block fixed top-20 right-[-50px] w-40 h-40 bg-[#FF6B6B] border-4 border-black rounded-full z-0 animate-bounce delay-700 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" />
       <div className="fixed bottom-20 left-[-20px] w-32 h-32 bg-[#4ECDC4] border-4 border-black rotate-12 z-0 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" />
       <div className="fixed top-1/2 left-10 w-8 h-8 bg-black z-0 rounded-none rotate-45" />
-      <div className="fixed top-1/3 right-20 w-12 h-12 border-4 border-black bg-[#FFE66D] z-0 rounded-full" />
+      <div className="hidden md:block fixed top-1/3 right-20 w-12 h-12 border-4 border-black bg-[#FFE66D] z-0 rounded-full" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-10">
 
@@ -68,7 +66,7 @@ export default function DetailClient({ id }: { id: string }) {
           <h1 className="text-4xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter mix-blend-hard-light relative z-10">
             {template.title}
           </h1>
-          <div className="h-4 bg-[#4ECDC4] w-1/2 mx-auto -mt-4 border-2 border-black rotate-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"></div>
+          <div className="hidden md:block h-4 bg-[#4ECDC4] w-1/2 mx-auto -mt-2 border-2 border-black rotate-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"></div>
 
           <p className="mt-6 font-bold bg-black text-white inline-block px-4 py-1 rotate-[-1deg]">
             👇 ISI SENDIRI DATA KAMU DI BAWAH 👇
@@ -76,7 +74,7 @@ export default function DetailClient({ id }: { id: string }) {
         </header>
 
         <div className="relative">
-          <div className="absolute -top-6 -right-4 z-30 rotate-12 bg-[#FF6B6B] text-white p-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-pulse">
+          <div className="hidden md:block absolute -top-6 -right-4 z-30 rotate-12 bg-[#FF6B6B] text-white p-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-pulse">
             <Zap size={24} fill="yellow" className="text-yellow-300" />
           </div>
 
